@@ -5,15 +5,15 @@ import { Home } from "./pages/Home";
 
 
 
-export default function App (){
+export default function App() {
   return (
     <BrowserRouter>
-<Navbar/>
+      <Navbar />
 
-    <Routes>
-    <Route path="/" element={<Home/>}></Route>
-    </Routes>
-<Footer/>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+      <Footer />
     </BrowserRouter>
   )
 

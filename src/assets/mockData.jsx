@@ -66,15 +66,39 @@ export const mocData =[
 
     },
     {
-        id:1,
-        image:image9,
-        Name:"product 1",
-        price:200,
-       price: 29.9,
+        id:6,
+        image:image4,
+        Name:"product 6",
+       price: 59.99,
+
+    },
+    {
+        id:7,
+        image:image5,
+        Name:"product 7",
+       price: 59.99,
+
+    },
+    {
+        id:8,
+        image:image3,
+        Name:"product 8",
+       price: 59.99,
+
+    },
+    {
+        id:9,
+        image:image2,
+        Name:"product 9",
+       price: 59.99,
+
+    },
+    {
+        id:10,
+        image:image1,
+        Name:"product 10",
+       price: 59.99,
 
     },
 
-
-
 ];
-

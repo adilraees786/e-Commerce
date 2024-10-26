@@ -1,5 +1,7 @@
 import React from 'react'
 import { Caterogries } from '../assets/mockData'
+import HeroImage from '../assets/Images/hero-page.png'
+
 
 
 const Home = () => {
@@ -19,7 +21,15 @@ const Home = () => {
               </ul>
           </div>
           <div>
-            
+            <img src={HeroImage} alt='' />
+<div>
+  <p> Code with Adil</p>
+  <h2>WELCOME TO E-SHOP</h2>
+  <p>MILLIONS + PRODUCTS</p>
+  <button> SHOP NOW</button>
+
+</div>
+
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 export const Caterogries =[
-    "Eltronics",
+    "Electronics",
     "Fashion",
     "Home & Kitchen",
     "Beauty",

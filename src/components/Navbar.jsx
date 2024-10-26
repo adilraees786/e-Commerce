@@ -12,19 +12,21 @@ export default function Navbar() {
                 </div>
                 <div className=' relative flex-1 mx-4'>
                     <form>
-                        <input type="text" placeholder=" Search Product" />
+                        <input type="text" placeholder=" Search Product" 
+                        className='w-full border py-2 px-4'
+                        />
                         <FaSearch className=' absolute top-3 right-3 text-red-600'></FaSearch>
                     </form>
                 </div>
-                <div>
+                <div className=' flex items-center space-x-4'>
                     <Link to="/cart">
-                        <FaShoppingCart />
+                        <FaShoppingCart className='text-lg' />
                     </Link>
 
-                    <button>
+                    <button className=' hidden md:block'>
                         Login | Register
                     </button>
-                    <button>
+                    <button className='block md:hidden'>
                         <FaUser />
                     </button>
 

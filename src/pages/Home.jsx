@@ -1,7 +1,33 @@
 import React from 'react'
+import { Caterogries } from '../assets/mockData'
 
-export const Home = () => {
+
+const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>SHOP BY CATEGORIES</div>
+            <ul>
+                {Caterogries.map((category, index) => (
+                  <li key={index}>
+                    
+                    {category}
+                  </li>
+                ))}
+              </ul>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
   )
 }
+
+
+
+export default Home

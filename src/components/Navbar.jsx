@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <div>
+        <div className=' bg-white shadow-md'> 
             <div>
                 <div>
                     <Link to="/">e-Shop</Link>

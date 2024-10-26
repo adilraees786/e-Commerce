@@ -32,6 +32,17 @@ export default function Navbar() {
 
                 </div>
             </div>
+
+{/* Start Menu  */}
+
+<div>
+    <Link className=' hover:underline'> Home</Link>
+    <Link className=' hover:underline'> Shop</Link>
+    <Link className=' hover:underline'> Contact</Link>
+    <Link className=' hover:underline'> About</Link>
+</div>
+
+
         </div>
     )
 }

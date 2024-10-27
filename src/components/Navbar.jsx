@@ -40,7 +40,7 @@ export default function Navbar() {
     Home
     </Link>
 
-    <Link to="/"  className=' hover:underline'> 
+    <Link to="/shop"  className=' hover:underline'> 
     Shop
     </Link>
 

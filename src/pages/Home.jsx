@@ -5,6 +5,7 @@ import InfoSection from '../components/infoSection'
 import CategorySection from '../components/CategorySection'
 import { setProducts } from '../redux/ProductSlice'
 import { useSelector, useDispatch } from 'react-redux'
+import ProductCard from '../components/ProductCard'
 
 
 
@@ -53,7 +54,7 @@ const Home = () => {
         <h2>Top Products</h2>
         <div>
           {products.products.slice(0, 5).map(((product) => (
-            <div>{product.Name}</div>
+          <ProductCard product={product}/>
 
           )))}
         </div>

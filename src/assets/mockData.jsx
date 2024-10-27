@@ -20,7 +20,7 @@ export const Caterogries =[
     "Automative",
 ];
 
-export const mocData =[
+export const mockData =[
     {
         id:1,
         image:image9,

@@ -6,7 +6,7 @@ import { FaFacebook, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 export const Footer = () => {
   return (
     <footer className='bg-gray-800 text-white py-8 px-4 md:px-16 lg:px-24'>
-      <div className=' container mx-auto grid grid-cols-1 md:grid-flow-col-3 gap-8'>
+      <div className=' container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'>
         <div>
           <h3 className=' text-xl font-semibold '>e-Shop</h3>
           <p className=' mt-4'>Your one-step fot all your needs. Shop with use and experience the best online
@@ -32,16 +32,17 @@ export const Footer = () => {
          
         </div>
         <div>
-          <h4>Follow Us</h4>
-          <div>
-            <a href=""><FaFacebook/></a>
-            <a href=""><FaInstagram/></a>
-            <a href=""><FaGithub/></a>
-            <a href=""><FaLinkedin/></a>
+          <h4 className=' text-lg font-semibold'>Follow Us</h4>
+          <div className=' flex space-x-4 mt-4'>
+            <a href="" className='hover:text-gray-800'><FaFacebook/></a>
+            <a href="" className='hover:text-gray-800'><FaInstagram/></a>
+            <a href="" className='hover:text-gray-800'><FaGithub/></a>
+            <a href="" className='hover:text-gray-800'><FaLinkedin/></a>
           </div>
-          <form>
-            <input type="email" placeholder='Enter your email' />
-            <button>Subscribe</button>
+          <form className=' flex items-center justify-center mt-8'>
+            <input type="email" placeholder='Enter your email' 
+            className=' w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600'/>
+            <button className='bg-red-500 text-white px-4 py-2 rounded-r-lg  '>Subscribe</button>
           </form>
         </div>
       </div>

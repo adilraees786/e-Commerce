@@ -5,7 +5,9 @@ export const ProductCard = ({product}) => {
   return (
     <div className=' bg-white p-4 shadow rounded relative border
     transform transition-transform duration-300 hover:scale-105'>
-        <img src={product.image} alt={product.Name} className='w-full h-48 object-contain mb-4' />
+        <img src={product.image}
+         alt={product.Name}
+          className='w-full h-48 object-contain mb-4' />
         <h3 className='text-lg font-semibold'>{product.Name}</h3>
         <p className='text-gray-500'>${product.price}</p>
         <div className='flex items-center mt-2 '>

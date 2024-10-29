@@ -1,13 +1,16 @@
 
 
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import EmptyCart from '../assets/Images/emptycart.png'
 import { FaTrash } from 'react-icons/fa'
 
 const Cart = () => {
   const cart = useSelector(state => state.cart)
+
+  const [address, setAddress] = useState('main street, 0012')
+
 
   return (
     <div className=' container mx-auto py-8 min-h-96 md:px-16 lg:px-24'>
@@ -59,10 +62,24 @@ const Cart = () => {
                   </div>
                 ))}
               </div>
-<div>
-  <h3>CART TOTAL</h3>
-</div>
-
+              <div>
+                <h3>CART TOTAL</h3>
+                <div>
+                  <span>Total Items:</span>
+                  <span>{cart.totalQunatity}</span>
+                </div>
+                <div>
+                  <p>Shipping:</p>
+                  <p>Shipping to:</p>
+                  <span>{address}</span>
+                  <button>Change address</button>
+                </div>
+                <div>
+                  <span>Total price:</span>
+                  <span>{cart.totalPrice.toFixed(2)}</span>
+                </div>
+<button> Proced to checkout</button>
+              </div>
             </div>
           </div>
 

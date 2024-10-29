@@ -62,23 +62,31 @@ const Cart = () => {
                   </div>
                 ))}
               </div>
-              <div>
-                <h3>CART TOTAL</h3>
-                <div>
-                  <span>Total Items:</span>
+
+              <div className=' md:w-1/2 bg-white p-6 rounded-lg shadow-md border'>
+                <h3 className=' text-sm font-semibold mb-5'>CART TOTAL</h3>
+                <div className=' flex justify-between mb-5 border-b pb-1'>
+                  <span className=' text-sm'>Total Items:</span>
                   <span>{cart.totalQunatity}</span>
                 </div>
-                <div>
+                <div className=' mb-4 border-b pb-2'>
                   <p>Shipping:</p>
-                  <p>Shipping to:</p>
-                  <span>{address}</span>
-                  <button>Change address</button>
+                  <p className=' ml-2'>
+                    Shipping to{" "}
+                  <span className=' text-xs font-bold'>{address}</span>
+                  </p>
+                  <button 
+                  className=' text-blue-500 hover:underline mt-1 ml-2'
+                  >Change address
+                  </button>
                 </div>
-                <div>
+                <div className=' flex justify-between mb-4'>
                   <span>Total price:</span>
                   <span>{cart.totalPrice.toFixed(2)}</span>
                 </div>
-<button> Proced to checkout</button>
+                <button className=' w-full bg-red-600 text-white py-2 hover:bg-red-800'>
+                   Proced to checkout
+                   </button>
               </div>
             </div>
           </div>

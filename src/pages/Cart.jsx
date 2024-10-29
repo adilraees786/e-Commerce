@@ -10,31 +10,31 @@ const Cart = () => {
   const cart = useSelector(state => state.cart)
 
   return (
-    <div className=' container mx-auto py-8 min-h-96 md:px-16 lg:px-24'> 
+    <div className=' container mx-auto py-8 min-h-96 md:px-16 lg:px-24'>
       {cart.products.length > 0 ? (
         <div>
           <h3 className=' text-2xl font-semibold mb-4'>SHOPPING CART</h3>
           <div className=' flex flex-col md:flex-row justify-between space-x-10 mt-8'>
             <div className=' md:w-2/3'>
-            <div className=' flex justify-between border-b items-center mb-4 text-xs font-bold '>
-              <p>PRODUCTS</p>
-              <div className=' flex space-x-8'>
-                <p>PRICE</p>
-                <p>QUANTITY</p>
-                <p>SUBTOTAL</p>
-                <p>REMOVE</p>
+              <div className=' flex justify-between border-b items-center mb-4 text-xs font-bold '>
+                <p>PRODUCTS</p>
+                <div className=' flex space-x-8'>
+                  <p>PRICE</p>
+                  <p>QUANTITY</p>
+                  <p>SUBTOTAL</p>
+                  <p>REMOVE</p>
+                </div>
               </div>
-
               <div>
                 {cart.products.map((product) => (
-                  <div 
-                  key={product.id}
-                  className=' flex justify-between p-3 border-b'>
-                  
-                    
+                  <div
+                    key={product.id}
+                    className=' flex justify-between p-3 border-b'>
+
+
                     <div className=' md:flex items-center  space-x-4'>
                       <img src={product.image} alt={product.name}
-                      className=' w-16 h-16 object-contain rounded' />
+                        className=' w-16 h-16 object-contain rounded' />
 
                       <div className=' flex-1 ml-4'>
                         <h3 className=' text-lg font-semibold'>{product.name}</h3>
@@ -53,20 +53,23 @@ const Cart = () => {
                       </div>
                       <p>${(product.qunatity * product.price).toFixed(2)}</p>
                       <button className=' text-red-500 hover:text-red-700'>
-                        <FaTrash/>
+                        <FaTrash />
                       </button>
-
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
+<div>
+  <h3>CART TOTAL</h3>
+</div>
+
             </div>
           </div>
+
         </div>
       ) : (
         <div className="flex justify-center">
-          <img src={EmptyCart} alt="Empty Cart" />
+          <img src={EmptyCart} alt="" className=' h-96' />
         </div>
       )}
     </div>

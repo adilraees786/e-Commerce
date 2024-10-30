@@ -49,7 +49,7 @@ const Cart = () => {
                         <button className=' text-xl font-bold px-1.5 border-r'
                         >-
                         </button>
-                        <p className='text-xl px-2'>{product.qunatity}</p>
+                        <p className='text-xl px-2'>{product.quantity}</p>
                         <button className=' text-xl px-1 border-1'
                         >+
                         </button>
@@ -67,7 +67,7 @@ const Cart = () => {
                 <h3 className=' text-sm font-semibold mb-5'>CART TOTAL</h3>
                 <div className=' flex justify-between mb-5 border-b pb-1'>
                   <span className=' text-sm'>Total Items:</span>
-                  <span>{cart.totalQunatity}</span>
+                  <span>{cart.totalQuantity}</span>
                 </div>
                 <div className=' mb-4 border-b pb-2'>
                   <p>Shipping:</p>

@@ -8,6 +8,7 @@ import  Cart  from "./pages/Cart";
 
 
 
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+       
       
       </Routes>
       <Footer />

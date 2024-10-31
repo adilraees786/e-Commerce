@@ -2,17 +2,20 @@
 
 
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import EmptyCart from '../assets/Images/emptycart.png';
 import { FaTrash } from 'react-icons/fa';
 import Modal from '../components/Modal';
 import { ChangeAddress } from '../components/ChangeAddress';
+import { removeFromCart } from '../redux/CartSlice';
+
+
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
-
   const [address, setAddress] = useState('main street, 0012');
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const dispatch = useDispatch();
 
   return (
     <div className='container mx-auto py-8 min-h-96 md:px-16 lg:px-24'>
@@ -56,7 +59,8 @@ const Cart = () => {
                         <button className='text-xl px-1 border-1'>+</button>
                       </div>
                       <p>${(product.quantity * product.price).toFixed(2)}</p>
-                      <button className='text-red-500 hover:text-red-700'>
+                      <button className='text-red-500 hover:text-red-700'
+                      onClick={() => dispatch(removeFromCart(product.id))}>
                         <FaTrash />
                       </button>
                     </div>

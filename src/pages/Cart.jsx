@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import EmptyCart from '../assets/Images/emptycart.png';
 import { FaTrash } from 'react-icons/fa';
 import Modal from '../components/Modal';
+import { ChangeAddress } from '../components/ChangeAddress';
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -92,8 +93,9 @@ const Cart = () => {
           </div>
           <Modal
             isModalOpen={isModalOpen}
-            setIsModalOpen={setIsModalOpen}
-          />
+            setIsModalOpen={setIsModalOpen}>
+              <ChangeAddress />
+            </Modal>
         </div>
       ) : (
         <div className='flex justify-center'>

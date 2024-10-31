@@ -1,8 +1,7 @@
 
+import React, { Children } from 'react';
 
-import React from 'react';
-
-export const Modal = ({ isModalOpen, setIsModalOpen }) => {
+export const Modal = ({ isModalOpen, setIsModalOpen}) => {
   if (!isModalOpen) return null;
 
   return (
@@ -14,7 +13,7 @@ export const Modal = ({ isModalOpen, setIsModalOpen }) => {
         >
           &times;
         </button>
-        <div>children</div>
+        <div>Children</div>
       </div>
     </div>
   );

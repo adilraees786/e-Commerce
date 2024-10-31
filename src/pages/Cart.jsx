@@ -94,7 +94,7 @@ const Cart = () => {
           <Modal
             isModalOpen={isModalOpen}
             setIsModalOpen={setIsModalOpen}>
-              <ChangeAddress />
+              <ChangeAddress  setAddress = {setAddress} setIsModalOpen = {setIsModalOpen}/>
             </Modal>
         </div>
       ) : (
@@ -107,4 +107,9 @@ const Cart = () => {
 };
 
 export default Cart;
+
+
+
+
+
 

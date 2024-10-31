@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 
 export const ChangeAddress = ({ setAddress, setIsModalOpen }) => {
   const [newAddress, setNewAddress] = useState("");
+  const OnClose = ()=>{
+    setAddress(newAddress);
+    setIsModalOpen(false);
+
+  }
 
   return (
     <div>
@@ -21,7 +26,7 @@ export const ChangeAddress = ({ setAddress, setIsModalOpen }) => {
         </button>
         <button 
           className="bg-blue-500 text-white py-2 px-4 rounded"
-          onClick={() => setAddress(newAddress)}
+          onClick={OnClose}
         >
           Save Address
         </button>

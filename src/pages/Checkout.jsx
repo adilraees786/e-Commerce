@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaAngleUp } from 'react-icons/fa';
 
 const Checkout = () => {
     return (
@@ -8,9 +9,39 @@ const Checkout = () => {
                 <h3 className='text-2xl font-semibold mb-4'>CHECKOUT</h3>
                 <div className='flex flex-col md:flex-row justify-between space-x-10 mt-8'>
                     <div className='md:w-2/3'>
-                    <div>
+                    <div className=' border p-2 mb-6'>
+                        <div className=' flex items-center justify-between '>
+                            <h3 className=' text-lg font-semibold'>
+                                Billing Information
+                                </h3>
+                            <FaAngleUp/>
+                        </div>
+                        <div className=' space-y-4'>
+                            <div>
+                                <label className=' block text-gray-700' >Name:</label>
+                                <input type='text'
+                                name='name'
+                                placeholder='Enter Your Name'
+                                className=" w-full px-3 py-2 border" />
+                            </div>
+                        </div>
+
                         <div>
-                            <h3>Billing Information</h3>
+                            <div>
+                                <label className=' block text-gray-700'>Email:</label>
+                                <input type='email' 
+                                name='email'
+                                placeholder='Enter Your Email'
+                                 className=" w-full px-3 py-2 border" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <label className=' block text-gray-700'>Phone:</label>
+                                <input type='text'
+                                name='phone'
+                                className="w-full px-3 py-2 borde" />
+                            </div>
                         </div>
                     </div>
                     </div>

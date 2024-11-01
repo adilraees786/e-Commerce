@@ -7,7 +7,8 @@ import EmptyCart from '../assets/Images/emptycart.png';
 import { FaTrash } from 'react-icons/fa';
 import Modal from '../components/Modal';
 import { ChangeAddress } from '../components/ChangeAddress';
-import { removeFromCart } from '../redux/CartSlice';
+import { decreaseQuantity, increaseQuantity, removeFromCart } from '../redux/CartSlice';
+
 
 
 

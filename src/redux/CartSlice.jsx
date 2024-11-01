@@ -39,11 +39,14 @@ if(findItem){
     state.totalQuantity -= findItem.quantity
     state.products = state.products.filter(item => item.id !== id)
 }
+},
+increaseQuantity(state, action){
+    const id = action.payload;
+    const findItem= state.products.find((item) => item.id === id)
+    
 }
-
        },
-    },
-)
+    });
 
 export const {addToCart, removeFromCart} = cartSlice.actions
 // export const {setProducts} = cartSlice.actions;

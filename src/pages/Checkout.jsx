@@ -5,6 +5,7 @@ import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
 const Checkout = () => {
     const [BillingToggle, setBillingToggle] = useState(true);
+    const [shippingToggle, setshippingToggle] = useState(false);
 
     return (
         <div className='container mx-auto py-8 min-h-96 md:px-16 lg:px-24'>
@@ -16,7 +17,7 @@ const Checkout = () => {
                             <h3 className='text-lg font-semibold'>Billing Information</h3>
                             {BillingToggle ? <FaAngleDown /> : <FaAngleUp />}
                         </div>
-                        
+
                         {/* Toggle this section based on BillingToggle */}
                         <div className={`space-y-4 ${BillingToggle ? "" : "hidden"}`}>
                             <div>
@@ -48,13 +49,14 @@ const Checkout = () => {
                             </div>
                         </div>
                     </div>
+                    {/* Shipping Information Section */}
                     <div className='border p-2 mb-6'>
                         <div className='flex items-center justify-between' onClick={() => setBillingToggle(!BillingToggle)}>
-                            <h3 className='text-lg font-semibold'>Billing Information</h3>
+                            <h3 className='text-lg font-semibold'>SHIPPING Information</h3>
                             {BillingToggle ? <FaAngleDown /> : <FaAngleUp />}
                         </div>
-                        
-                        {/* Toggle this section based on BillingToggle */}
+
+
                         <div className={`space-y-4 ${BillingToggle ? "" : "hidden"}`}>
                             <div>
                                 <label className='block text-gray-700'>Name:</label>
@@ -87,9 +89,9 @@ const Checkout = () => {
                     </div>
 
                 </div>
-                
+
                 <div className='md:w-1/2 bg-white p-6 rounded-lg shadow-md border'>
-                   
+
                 </div>
             </div>
         </div>

@@ -1,3 +1,6 @@
+
+
+
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
@@ -12,11 +15,11 @@ const cartSlice = createSlice({
     reducers: {
         addToCart(state, action) {
             const newItem = action.payload;
-            const itemIndex = state.products.find((item) => item.id === newItem.id)
+            const itemIndex = state.products.find((item) => item.id === newItem.id);
 
             if (itemIndex) {
                 itemIndex.quantity++;
-                itemIndex.totalPrice += newItem.price
+                itemIndex.totalPrice += newItem.price;
             } else {
                 state.products.push({
                     id: newItem.id,
@@ -25,48 +28,43 @@ const cartSlice = createSlice({
                     quantity: 1,
                     totalPrice: newItem.price,
                     image: newItem.image
-
-                })
+                });
             }
-            state.totalPrice += newItem.price
+            state.totalPrice += newItem.price;
             state.totalQuantity++;
         },
         removeFromCart(state, action) {
             const id = action.payload;
-            const findItem = state.products.find((item) => item.id === id)
+            const findItem = state.products.find((item) => item.id === id);
             if (findItem) {
-                state.totalPrice -= findItem.totalPrice
-                state.totalQuantity -= findItem.quantity
-                state.products = state.products.filter(item => item.id !== id)
+                state.totalPrice -= findItem.totalPrice;
+                state.totalQuantity -= findItem.quantity;
+                state.products = state.products.filter(item => item.id !== id);
             }
         },
         increaseQuantity(state, action) {
             const id = action.payload;
-            const findItem = state.products.find((item) => item.id === id)
+            const findItem = state.products.find((item) => item.id === id);
             if (findItem) {
-                findItem.quantity++
-                findItem.totalPrice += findItem.price
-                state.totalPrice += findItem.price
-                state.totalQuantity++
-
+                findItem.quantity++;
+                findItem.totalPrice += findItem.price;
+                state.totalPrice += findItem.price;
+                state.totalQuantity++;
             }
         },
         decreaseQuantity(state, action) {
-            if(findItem.quantity > 1){
             const id = action.payload;
-            const findItem = state.products.find((item) => item.id === id)
-            if (findItem) {
-                findItem.quantity--;
-                findItem.totalPrice -= findItem.price
-                state.totalPrice -= findItem.price
-                state.totalQuantity--;
+            const findItem = state.products.find((item) => item.id === id);
 
+            if (findItem && findItem.quantity > 1) {
+                findItem.quantity--;
+                findItem.totalPrice -= findItem.price;
+                state.totalPrice -= findItem.price;
+                state.totalQuantity--;
             }
         }
-    }
     },
 });
 
-export const { addToCart, removeFromCart, increaseQuantity, decreaseQuantity } = cartSlice.actions
-// export const {setProducts} = cartSlice.actions;
-export default cartSlice.reducer
+export const { addToCart, removeFromCart, increaseQuantity, decreaseQuantity } = cartSlice.actions;
+export default cartSlice.reducer;

@@ -100,7 +100,7 @@ const Checkout = () => {
 
                         {/* Toggle this section based on BillingToggle */}
                         <div className={`space-y-4 ${paymentToggle ? "" : "hidden"}`}>
-                            <div className=' flex items-center mb-2'>
+                            <div className=' flex items-center mb-2 '>
 
                                 <input
                                     type='radio'
@@ -109,7 +109,7 @@ const Checkout = () => {
                                     onClick={() => setpaymentMehod("cod")}
 
                                 />
-                                <label className='block text-gray-700'>Cash on delivery</label>
+                                <label className='block text-gray-700 ml-2'>Cash on delivery</label>
                             </div>
                             <div className=' flex items-center mb-2'>
 
@@ -120,10 +120,57 @@ const Checkout = () => {
                                     onClick={() => setpaymentMehod("dc")}
 
                                 />
-                                <label className='block text-gray-700'>Debit Card</label>
+                                <label className='block text-gray-700 ml-2'>Debit Card</label>
                             </div>
+                            {paymentMethod === "dc" &&
+                            (
+                                <div>
+
+                              
+                                <div className='space-y-4'>
+                                    <h3>Debit Card Information</h3>
+                                    <div>
+                                        <label className='block text-gray-700'>Card Number:</label>
+                                        <input
+                                            type='text'
+                                            name='cardNumber'
+                                            placeholder='Enter Your card number'
+                                            className="w-full px-3 py-2 border"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className='block text-gray-700'>Card Holder Name:</label>
+                                        <input
+                                            type='text'
+                                            name='holdername'
+                                            placeholder='Enter Your '
+                                            className="w-full px-3 py-2 border"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className='block text-gray-700'>Expiration Date:</label>
+                                        <input
+                                            type='text'
+                                            name='expirationDate'
+                                            placeholder='Enter Your expiration date'
+                                            className="w-full px-3 py-2 border"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className='block text-gray-700'>CVV:</label>
+                                        <input
+                                            type='text'
+                                            name='cvv'
+                                            placeholder='Enter Your CVV'
+                                            className="w-full px-3 py-2 border"
+                                        />
+                                    </div>
+                                </div>
+                                </div>
+                            )
+                            }
                         </div>
-                        {paymentMethod}
+                    
                     </div>
                 </div>
 

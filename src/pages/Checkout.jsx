@@ -51,37 +51,37 @@ const Checkout = () => {
                     </div>
                     {/* Shipping Information Section */}
                     <div className='border p-2 mb-6'>
-                        <div className='flex items-center justify-between' onClick={() => setBillingToggle(!BillingToggle)}>
+                        <div className='flex items-center justify-between' onClick={() => setshippingToggle(!shippingToggle)}>
                             <h3 className='text-lg font-semibold'>SHIPPING Information</h3>
-                            {BillingToggle ? <FaAngleDown /> : <FaAngleUp />}
+                            {shippingToggle ? <FaAngleDown /> : <FaAngleUp />}
                         </div>
 
 
-                        <div className={`space-y-4 ${BillingToggle ? "" : "hidden"}`}>
+                        <div className={`space-y-4 ${shippingToggle ? "" : "hidden"}`}>
                             <div>
-                                <label className='block text-gray-700'>Name:</label>
+                                <label className='block text-gray-700'>Address:</label>
                                 <input
                                     type='text'
-                                    name='name'
-                                    placeholder='Enter Your Name'
+                                    name='address'
+                                    placeholder='Enter Your address'
                                     className="w-full px-3 py-2 border"
                                 />
                             </div>
                             <div>
-                                <label className='block text-gray-700'>Email:</label>
+                                <label className='block text-gray-700'>City:</label>
                                 <input
-                                    type='email'
-                                    name='email'
-                                    placeholder='Enter Your Email'
+                                    type='text'
+                                    name='city'
+                                    placeholder='Enter Your city'
                                     className="w-full px-3 py-2 border"
                                 />
                             </div>
                             <div>
-                                <label className='block text-gray-700'>Phone:</label>
+                                <label className='block text-gray-700'>Zip Code:</label>
                                 <input
                                     type='text'
                                     name='phone'
-                                    placeholder='Enter Your Phone'
+                                    placeholder='Enter Your zip code'
                                     className="w-full px-3 py-2 border"
                                 />
                             </div>

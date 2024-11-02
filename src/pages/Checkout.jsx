@@ -98,7 +98,7 @@ const Checkout = () => {
                             {paymentToggle ? <FaAngleDown /> : <FaAngleUp />}
                         </div>
 
-                        {/* Toggle this section based on BillingToggle */}
+                      
                         <div className={`space-y-4 ${paymentToggle ? "" : "hidden"}`}>
                             <div className=' flex items-center mb-2 '>
 
@@ -124,45 +124,57 @@ const Checkout = () => {
                             </div>
                             {paymentMethod === "dc" &&
                             (
-                                <div>
+                                <div className=' bg-gray-100 p-4 rounded-lg mb-4'>
 
                               
                                 <div className='space-y-4'>
-                                    <h3>Debit Card Information</h3>
-                                    <div>
-                                        <label className='block text-gray-700'>Card Number:</label>
+                                    <h3 className=' text-xl font-semibold mb-4'>Debit Card Information</h3>
+                                    <div className=' mb-4'>
+                                        <label className='block text-gray-700 font-semibold mb-2'>
+                                            Card Number:
+                                            </label>
                                         <input
                                             type='text'
                                             name='cardNumber'
                                             placeholder='Enter Your card number'
-                                            className="w-full px-3 py-2 border"
+                                            className="border p-2 w-full rounded"
+                                            required
                                         />
                                     </div>
-                                    <div>
-                                        <label className='block text-gray-700'>Card Holder Name:</label>
+                                    <div className=' mb-4'>
+                                        <label className='block text-gray-700 font-semibold mb-2'>
+                                            Card Holder Name:
+                                            </label>
                                         <input
                                             type='text'
                                             name='holdername'
                                             placeholder='Enter Your '
-                                            className="w-full px-3 py-2 border"
+                                            className="border p-2 w-full rounded"
+                                            required
                                         />
                                     </div>
                                     <div>
-                                        <label className='block text-gray-700'>Expiration Date:</label>
+                                        <label className='block text-gray-700 font-semibold mb-2'>
+                                            Expiration Date:
+                                            </label>
                                         <input
                                             type='text'
                                             name='expirationDate'
-                                            placeholder='Enter Your expiration date'
-                                            className="w-full px-3 py-2 border"
+                                            placeholder='MM/YY'
+                                            className="border p-2 w-full rounded"
+                                            required
                                         />
                                     </div>
-                                    <div>
-                                        <label className='block text-gray-700'>CVV:</label>
+                                    <div className=''>
+                                        <label className='block text-gray-700 font-semibold mb-2'>
+                                            CVV:
+                                            </label>
                                         <input
                                             type='text'
                                             name='cvv'
                                             placeholder='Enter Your CVV'
-                                            className="w-full px-3 py-2 border"
+                                            className="border p-2 w-full rounded"
+                                            required
                                         />
                                     </div>
                                 </div>

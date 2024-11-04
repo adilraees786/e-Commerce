@@ -10,8 +10,6 @@ import { ChangeAddress } from '../components/ChangeAddress';
 import { decreaseQuantity, increaseQuantity, removeFromCart } from '../redux/CartSlice';
 import { Navigate, useNavigate } from 'react-router-dom';
 
-
-
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const [address, setAddress] = useState('main street, 0012');

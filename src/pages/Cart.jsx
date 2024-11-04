@@ -11,7 +11,6 @@ import { decreaseQuantity, increaseQuantity, removeFromCart } from '../redux/Car
 import { Navigate, useNavigate } from 'react-router-dom';
 
 
-// cart section
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);

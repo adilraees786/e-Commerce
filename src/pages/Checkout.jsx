@@ -1,5 +1,5 @@
 
-//  checkout section
+
 import React, { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 
@@ -187,7 +187,10 @@ const Checkout = () => {
                 </div>
 
                 <div className='md:w-1/2 bg-white p-6 rounded-lg shadow-md border'>
-
+                <h3>Order Summary</h3>
+                <div>
+                    
+                </div>
                 </div>
             </div>
         </div>

@@ -38,7 +38,8 @@ const Checkout = () => {
                             </div>
                             <div>
                                 <label className='block text-gray-700'>Email:</label>
-                                <input
+                                <input  
+                                
                                     type='email'
                                     name='email'
                                     placeholder='Enter Your Email'

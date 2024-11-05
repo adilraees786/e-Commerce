@@ -33,7 +33,7 @@ const Checkout = () => {
                                     name='name'
                                     placeholder='Enter Your Name'
                                     className="w-full px-3 py-2 border"
-                                    required
+                                  
                                 />
                             </div>
                             <div>
@@ -43,7 +43,7 @@ const Checkout = () => {
                                     name='email'
                                     placeholder='Enter Your Email'
                                     className="w-full px-3 py-2 border"
-                                    required
+                                   
                                 />
                             </div>
                             <div>
@@ -53,6 +53,7 @@ const Checkout = () => {
                                     name='phone'
                                     placeholder='Enter Your Phone'
                                     className="w-full px-3 py-2 border"
+                                    required
                                 />
                             </div>
                         </div>

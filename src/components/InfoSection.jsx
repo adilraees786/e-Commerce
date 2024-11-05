@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaHeadset, FaShippingFast, FaMoneyBillWave, FaLock, FaTag } from 'react-icons/fa';
 
-const infoSection = () => {
+const InfoSection = () => {
     const intoItems = [
         {
             icon: <FaShippingFast className=' text-3xl text-red-600' />,
@@ -50,4 +50,4 @@ const infoSection = () => {
     )
 }
 
-export default infoSection;
+export default InfoSection;

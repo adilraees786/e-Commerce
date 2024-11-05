@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Caterogries, mockData } from '../assets/mockData'
 import HeroImage from '../assets/Images/hero-page.png'
-import InfoSection from '../components/infoSection'
+import InfoSection from '../components/InfoSection'
 import CategorySection from '../components/CategorySection'
 import { setProducts } from '../redux/ProductSlice'
 import { useSelector, useDispatch } from 'react-redux'
@@ -52,6 +52,8 @@ const Home = () => {
         </div>
 
         <InfoSection />
+
+
         <CategorySection />
 
         <div className=' container mx-auto py-12'>

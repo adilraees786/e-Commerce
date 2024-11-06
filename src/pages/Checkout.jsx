@@ -80,6 +80,8 @@ zip: ''
                                     name='address'
                                     placeholder='Enter Your address'
                                     className="w-full px-3 py-2 border"
+                                    onClick={(e) => setshippingInfo({...shippinfInfo, address: e.target.value})}
+
                                 />
                             </div>
                             <div>

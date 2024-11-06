@@ -91,6 +91,8 @@ zip: ''
                                     name='city'
                                     placeholder='Enter Your city'
                                     className="w-full px-3 py-2 border"
+                                    onClick={(e) => setshippingInfo({...shippinfInfo, city: e.target.value})}
+
                                 />
                             </div>
                             <div>
@@ -100,6 +102,8 @@ zip: ''
                                     name='phone'
                                     placeholder='Enter Your zip code'
                                     className="w-full px-3 py-2 border"
+                                    onClick={(e) => setshippingInfo({...shippinfInfo, zip: e.target.value})}
+
                                 />
                             </div>
                         </div>

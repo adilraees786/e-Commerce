@@ -11,9 +11,12 @@ const Checkout = () => {
     const [paymentMethod, setpaymentMehod] = useState("cod")
 
     const cart = useSelector( state => state.cart)
-const [shippinfInfi, setshippingInfo] = useState((
-    
-))
+const [shippinfInfo, setshippingInfo] = useState({
+address: '',
+city: '',
+zip: ''
+
+})
 
     return (
         <div className='container mx-auto py-8 min-h-96 md:px-16 lg:px-24'>

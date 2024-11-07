@@ -5,12 +5,14 @@ import  Home  from "./pages/Home";
 import { Shop } from "./pages/Shop";
 import  Cart  from "./pages/Cart";
 import  Checkout  from "./pages/Checkout";
+import { useState } from "react";
 
 
 
 
 
 export default function App() {
+  const [order, setorder] = useState(null)
   return (
     <BrowserRouter>
       <Navbar />
@@ -18,7 +20,7 @@ export default function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        <Route path="/checkout" element={<Checkout/>}></Route>
+        <Route path="/checkout" element={<Checkout setorder={setorder}/>}></Route>
 
        
       

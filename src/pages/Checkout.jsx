@@ -99,7 +99,7 @@ zip: ''
                                 <label className='block text-gray-700'>Zip Code:</label>
                                 <input
                                     type='text'
-                                    name='phone'
+                                    name='zip'
                                     placeholder='Enter Your zip code'
                                     className="w-full px-3 py-2 border"
                                     onClick={(e) => setshippingInfo({...shippinfInfo, zip: e.target.value})}

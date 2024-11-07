@@ -166,7 +166,7 @@ zip: ''
                                         <input
                                             type='text'
                                             name='holdername'
-                                            placeholder='Enter Your '
+                                            placeholder='Enter card holder name'
                                             className="border p-2 w-full rounded"
                                             required
                                         />

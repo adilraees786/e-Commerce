@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 
-const Checkout = () => {
+const Checkout = ({setOrder}) => {
     const [BillingToggle, setBillingToggle] = useState(true);
     const [shippingToggle, setshippingToggle] = useState(false);
     const [paymentToggle, setpaymentToggle] = useState(false);
@@ -17,6 +17,10 @@ city: '',
 zip: ''
 
 })
+const handleOrder = () => {
+    
+
+}
 
     return (
         <div className='container mx-auto py-8 min-h-96 md:px-16 lg:px-24'>
@@ -235,8 +239,11 @@ zip: ''
                     </div>
                 </div>
                 <button
-                className=' w-full bg-red-600 text-white py-2 mt-6 hover:bg-red-800'>
-                    Place Order</button>
+                className=' w-full bg-red-600 text-white py-2 mt-6 hover:bg-red-800'
+                onClick={handleOrder}>
+                    
+                    Place Order
+                    </button>
                 </div>
             </div>
         </div>

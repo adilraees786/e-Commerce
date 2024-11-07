@@ -1,7 +1,16 @@
 import React from 'react'
 
-export const Order = () => {
+export const Order = ({order}) => {
   return (
-    <div>Order</div>
+    <div>
+        <h2>Thank you for your order </h2>
+        <p>Your Order has been placed successfully you will recieve an email confirmation shortly</p>
+   <div>
+    <h3>Order Summary</h3>
+   </div>
+   
+    </div>
   )
 }
+
+export default Order;

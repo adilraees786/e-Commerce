@@ -26,7 +26,7 @@ const handleOrder = () => {
 const newOrder = {
     products: cart.products,
     orderNumber: "1234",
-shippinfInformation: shippinfInfo,
+shippingInformation: shippinfInfo,
 totalPrice: cart.totalPrice
 
 

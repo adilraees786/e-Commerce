@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import React, { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
-import { PiShippingContainerLight } from 'react-icons/pi';
+
 import { useSelector } from 'react-redux';
 
 const Checkout = ({setOrder}) => {
@@ -27,7 +27,7 @@ const newOrder = {
     products: cart.products,
     orderNumber: "1234",
 shippinfInformation: shippinfInfo,
-totalPrice: cart.totalPrice,
+totalPrice: cart.totalPrice
 
 
 }

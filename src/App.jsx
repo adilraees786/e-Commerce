@@ -6,14 +6,14 @@ import { Shop } from "./pages/Shop";
 import  Cart  from "./pages/Cart";
 import  Checkout  from "./pages/Checkout";
 import { useState } from "react";
-import { Order } from "./pages/Order";
+import  Order  from "./pages/Order";
 
 
 
 
 
 export default function App() {
-  const [order, setorder] = useState(null)
+  const [order, setOrder] = useState(null)
   return (
     <BrowserRouter>
       <Navbar />
@@ -21,8 +21,8 @@ export default function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/shop" element={<Shop />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        <Route path="/checkout" element={<Checkout setorder={setorder}/>}></Route>
-        <Route path="/'/order-comfirmation" element={<Order setorder={order}/>}></Route>
+        <Route path="/checkout" element={<Checkout setOrder={setOrder}/>}></Route>
+        <Route path="/order-comfirmation" element={<Order order={order}/>}></Route>
 
        
       

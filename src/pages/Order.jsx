@@ -7,6 +7,10 @@ export const Order = ({order}) => {
         <p>Your Order has been placed successfully you will recieve an email confirmation shortly</p>
    <div>
     <h3>Order Summary</h3>
+    <p>Order Number: {order.orderNumber}</p>
+    
+
+
    </div>
    
     </div>

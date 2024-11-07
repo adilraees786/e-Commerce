@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 
 
 import React, { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
+import { PiShippingContainerLight } from 'react-icons/pi';
 import { useSelector } from 'react-redux';
 
 const Checkout = ({setOrder}) => {
@@ -10,15 +12,28 @@ const Checkout = ({setOrder}) => {
     const [paymentToggle, setpaymentToggle] = useState(false);
     const [paymentMethod, setpaymentMehod] = useState("cod")
 
-    const cart = useSelector( state => state.cart)
+    
 const [shippinfInfo, setshippingInfo] = useState({
 address: '',
 city: '',
 zip: ''
 
 })
+const cart = useSelector( state => state.cart)
+const navigate = useNavigate()
+
 const handleOrder = () => {
-    
+const newOrder = {
+    products: cart.products,
+    orderNumber: "1234",
+shippinfInformation: shippinfInfo,
+totalPrice: cart.totalPrice,
+
+
+}
+setOrder(newOrder)
+navigate('/order-comfirmation')
+
 
 }
 

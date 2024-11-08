@@ -36,7 +36,7 @@ export const Footer = () => {
           <div className=' flex space-x-4 mt-4'>
             <a href="" className='hover:text-gray-800'><FaFacebook /></a>
             <a href="" className='hover:text-gray-800'><FaInstagram /></a>
-            <a href="" className='hover:text-gray-800'><FaGithub /></a>
+            <a href="https://github.com/adilraees786" className='hover:text-gray-800'><FaGithub /></a>
             <a href="" className='hover:text-gray-800'><FaLinkedin /></a>
           </div>
           <form className=' flex items-center justify-center mt-8'>

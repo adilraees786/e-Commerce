@@ -37,7 +37,7 @@ export const Footer = () => {
             <a href="" className='hover:text-gray-800'><FaFacebook /></a>
             <a href="" className='hover:text-gray-800'><FaInstagram /></a>
             <a href="https://github.com/adilraees786" className='hover:text-gray-800'><FaGithub /></a>
-            <a href="" className='hover:text-gray-800'><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/adil-raees-08436a2b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className='hover:text-gray-800'><FaLinkedin /></a>
           </div>
           <form className=' flex items-center justify-center mt-8'>
             <input type="email" placeholder='Enter your email'

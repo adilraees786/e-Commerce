@@ -34,7 +34,7 @@ export const Footer = () => {
         <div>
           <h4 className=' text-lg font-semibold'>Follow Us</h4>
           <div className=' flex space-x-4 mt-4'>
-            <a href="" className='hover:text-gray-800'><FaFacebook /></a>
+            <a href="https://www.facebook.com/adil.raees.96?mibextid=ZbWKwL" className='hover:text-gray-800'><FaFacebook /></a>
             <a href="" className='hover:text-gray-800'><FaInstagram /></a>
             <a href="https://github.com/adilraees786" className='hover:text-gray-800'><FaGithub /></a>
             <a href="https://www.linkedin.com/in/adil-raees-08436a2b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className='hover:text-gray-800'><FaLinkedin /></a>

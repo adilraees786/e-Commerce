@@ -69,12 +69,15 @@
 // }
 
 
-import React from 'react'
+import React, { useState } from 'react'
 import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
+    const [isModelOpen, setIsModelOpen] = useState(false)
+    const [isLogin, setIsLogin] = useState(true)
+
     const products = useSelector(state => state.cart.products) // Fixed typo here
     return (
         <div className='bg-white shadow-md'> 
@@ -124,6 +127,7 @@ export default function Navbar() {
                     About
                 </Link>
             </div>
+            
         </div>
     )
 }

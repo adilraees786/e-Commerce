@@ -11,6 +11,9 @@ import Modal from './Modal'
 export default function Navbar() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [isLogin, setIsLogin] = useState(true)
+   
+    const [search, setSearch] = useState()
+
     
 
 const openSignUp = () => {
@@ -22,6 +25,7 @@ const openLogin = () => {
     setIsLogin(true)
     setIsModalOpen(true)
 }
+
 
     const products = useSelector(state => state.cart.products) 
     return (

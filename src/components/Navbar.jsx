@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Login from './Login'
 import Register from './Register'
 import Modal from './Modal'
-import { setSearchTerm } from '../redux/ProductSlice'
+import  setSearchTerm  from '../redux/ProductSlice'
 
 
 

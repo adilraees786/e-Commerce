@@ -8,7 +8,7 @@ import  Checkout  from "./pages/Checkout";
 import { useState } from "react";
 import  Order  from "./pages/Order";
 import FilterData from "./pages/FilterData";
-import { ProductDetails } from "./pages/ProductDetails";
+import  ProductDetails  from "./pages/ProductDetails";
 
 
 

@@ -4,7 +4,7 @@ import { ProductCard } from '../components/ProductCard'
 
 
 export const FilterData = () => {
-  const filterProducts = useSelector(state => state.product.FilterData)
+  const filterProducts = useSelector(state => state.product.filterData)
 
 
   return (

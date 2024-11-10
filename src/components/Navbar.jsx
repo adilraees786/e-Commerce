@@ -48,7 +48,7 @@ const openLogin = () => {
                 <div className='relative flex-1 mx-4'>
                     <form onSubmit={handleSearch}>
                         <input type="text" placeholder=" Search Product" 
-                        className='w-full border py-2 px-4' onClick={(e) => setSearch(e.target.value)}
+                        className='w-full border py-2 px-4' onChange={(e) => setSearch(e.target.value)}
                         />
                         <FaSearch className='absolute top-3 right-3 text-red-600' />
                     </form>

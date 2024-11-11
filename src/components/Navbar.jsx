@@ -37,7 +37,7 @@ export default function Navbar() {
         <div className='bg-white shadow-md'> 
             <div className='container mx-auto px-4 lg:px-24 py-4 flex justify-between items-center'>
                 <div className='text-lg flex-1 mx-4'>
-                    <Link to="/">e-Shop</Link>
+                    <Link to="/" className='text-xl font-extrabold'>E-Shop</Link>
                 </div>
                 <div className='relative flex-1 mx-4'>
                     <form onSubmit={handleSearch}>

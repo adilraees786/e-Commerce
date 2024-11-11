@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 
 
 
-export default function ProductDetails() {
+export default function ProductDetail() {
     const { id } = useParams();
     const products = useSelector(state => state.product.products)
     const [product, setProduct] = useState();

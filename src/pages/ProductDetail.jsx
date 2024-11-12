@@ -10,6 +10,7 @@ export default function ProductDetail() {
     const { id } = useParams();
     const products = useSelector(state => state.product.products)
     const [product, setProduct] = useState();
+    
 
     useEffect(
         () => {

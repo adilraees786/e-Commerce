@@ -1,7 +1,7 @@
 import React from "react"
 import MenCategory from '../assets/Images/man.png'
 import WomanCategory from '../assets/Images/woman.png'
-import KidCategory from '../assets/Images/Kid.png'
+import KidCategory from '../assets/Images/kid.png'
 
 
 export default function () {

@@ -63,7 +63,7 @@ export default function ProductDetail() {
             </div>
             <div className='mt-8'>
                 <h3 className=' text-xl font-bold mb-2'>Product Description</h3>
-                <p>Product deccription will goes here</p>
+                <p className='font-semibold'>Product deccription will goes here</p>
             </div>
         </div>
     )

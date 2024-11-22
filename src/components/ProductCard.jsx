@@ -5,6 +5,7 @@ import { FaStar } from 'react-icons/fa';
 import { addToCart } from '../redux/CartSlice';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 export const ProductCard = ({ product }) => {
   const dispatch = useDispatch();
@@ -13,7 +14,14 @@ export const ProductCard = ({ product }) => {
     e.stopPropagation();
     e.preventDefault();
     dispatch(addToCart(product));
-    alert("Product added successfully!");
+
+    // alert("Product added successfully!");
+    
+    (Swal.fire({
+      icon: "success",
+      text: "Product added successfully!",
+  
+    }));
   };
 
   return (

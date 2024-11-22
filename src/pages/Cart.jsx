@@ -92,7 +92,7 @@ const Cart = () => {
               </div>
               <div className='flex justify-between mb-4'>
                 <span>Total price:</span>
-                <span>{cart.totalPrice.toFixed(2)}</span>
+                <span>${cart.totalPrice.toFixed(2)}</span>
               </div>
               <button className='w-full bg-red-600 text-white py-2 hover:bg-red-800'
               onClick={() => navigate('/checkout')}>

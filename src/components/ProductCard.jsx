@@ -14,9 +14,7 @@ export const ProductCard = ({ product }) => {
     e.stopPropagation();
     e.preventDefault();
     dispatch(addToCart(product));
-
-    // alert("Product added successfully!");
-    
+  
     (Swal.fire({
       icon: "success",
       text: "Product added successfully!",
